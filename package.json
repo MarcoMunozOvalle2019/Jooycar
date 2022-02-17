@@ -1,13 +1,14 @@
 {
-  "name": "jooycar",
+  "name": "marco",
   "version": "1.0.0",
-  "description": "test para Jooycar",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {

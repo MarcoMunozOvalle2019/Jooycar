@@ -7,6 +7,17 @@ const Task = require('../models/task')
 const ModuleError = require('../utils/module.error')
 
 
+router.get('/api/trips/v1/getAll', async(req,res)=>{
+  try{
+      const data = await Task.find({})      
+      res.status(200).json({'trips':data})   
+   }
+  catch(e){
+      let moduleError = new ModuleError(e)
+       res.status(422).json({error:moduleError})
+       }    
+})
+
 router.get('/api/trips/v1', async(req,res)=>{
     const parametros = req.query    
 
